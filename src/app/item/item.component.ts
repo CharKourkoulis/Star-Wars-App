@@ -9,10 +9,9 @@ import { StarWarsService } from '../star-wars.service';
 })
 export class ItemComponent implements OnInit {
   @Input() character;
-  swService: StarWarsService;
 
-  constructor(swService: StarWarsService) {
-    this.swService = swService;
+  constructor(private swService: StarWarsService) {
+
   }
 
   ngOnInit() {

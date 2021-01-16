@@ -10,10 +10,9 @@ import { StarWarsService } from '../star-wars.service';
 export class TabsComponent implements OnInit {
   characters = [];
   chosenList = 'all';
-  swService: StarWarsService;
 
-  constructor(swService: StarWarsService) {
-    this.swService = swService;
+  constructor(private swService: StarWarsService) {
+
   }
 
   ngOnInit() {
