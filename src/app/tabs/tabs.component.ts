@@ -8,8 +8,8 @@ import { StarWarsService } from '../star-wars.service';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent implements OnInit {
-  characters = [];
-  chosenList = 'all';
+  //characters = [];
+  //chosenList = 'all';
 
   constructor(private swService: StarWarsService) {
 
@@ -18,6 +18,7 @@ export class TabsComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*
   onChoose(side) {
     this.chosenList = side;
   }
@@ -26,4 +27,5 @@ export class TabsComponent implements OnInit {
     this.characters = this.swService.getCharacters(this.chosenList);
     return this.characters;
   }
+  */
 }
